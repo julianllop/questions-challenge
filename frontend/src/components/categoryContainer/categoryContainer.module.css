@@ -1,0 +1,37 @@
+.categoryContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 327px;
+}
+
+.titleAndCategories {
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+}
+
+.title {
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 327px;
+    justify-content: space-around;
+    gap: 29px;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}

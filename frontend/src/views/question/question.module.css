@@ -1,0 +1,263 @@
+.component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.questionContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 327px;
+    height: 194px;
+    border-radius: 16px;
+    background-color: #dcf8ff;
+    position: relative;
+    margin-bottom: 22px;
+}
+
+.question {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 279px;
+    height: 108px;
+    color: #1c1c1c;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    padding: 45px 24px 41px 24px;
+}
+
+.questionsLeft {
+    color: #3eb8d4;
+    text-align: right;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.xButtonAndProgressBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
+.xButton {
+    width: 34px;
+    height: 34px;
+    border-radius: 50px;
+    background-color: #fff;
+    border: 1px solid #efefef;
+}
+
+.xButton:hover {
+    cursor: pointer;
+}
+
+.progressBarCont {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 17px;
+    padding-right: 10px;
+    width: 274px;
+    height: 34px;
+    border-radius: 17px;
+    border: 1px solid #efefef;
+    background-color: #fff;
+}
+
+.progressBar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 200px;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #efefef;
+}
+
+.completed {
+    width: 0%;
+    height: 8px;
+    border-radius: 4px;
+    background-color: #ff9f41;
+}
+
+.timerContainer {
+    position: absolute;
+    top: -28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.timer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+
+.option {
+    width: 327px;
+    height: 52px;
+    border: 2px solid #efefef;
+    border-radius: 16px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.option input[type="checkbox"] {
+    width: 20px; /* Ajusta el tamaño del checkbox */
+    height: 20px; /* Ajusta el tamaño del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+    appearance: none; /* Elimina los estilos predeterminados del checkbox */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    border: 2px solid #efefef; /* Añade un borde alrededor del checkbox */
+    outline: none; /* Elimina el contorno predeterminado del enfoque */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+}
+
+.checkbox {
+    position: relative;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 27px;
+    height: 27px;
+}
+
+.checked {
+    position: absolute;
+    top: 3px;
+    left: 9px;
+    right: 0px;
+    z-index: 1;
+    width: 10px;
+    height: 10px;
+}
+
+.correct {
+    width: 327px;
+    height: 52px;
+    border: 2px solid #3eb8d4;
+    border-radius: 16px;
+    background-color: #3eb8d4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.correct input[type="checkbox"] {
+    width: 20px; /* Ajusta el tamaño del checkbox */
+    height: 20px; /* Ajusta el tamaño del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+    appearance: none; /* Elimina los estilos predeterminados del checkbox */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    border: 2px solid #3eb8d4; /* Añade un borde alrededor del checkbox */
+    outline: none; /* Elimina el contorno predeterminado del enfoque */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+}
+
+.correct label {
+    width: 100%;
+    height: 100%;
+    padding: 0px 24px 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+}
+.wrong {
+    width: 327px;
+    height: 52px;
+    border: 2px solid #ff5341;
+    border-radius: 16px;
+    background-color: #ffdfdc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrong input[type="checkbox"] {
+    width: 20px; /* Ajusta el tamaño del checkbox */
+    height: 20px; /* Ajusta el tamaño del checkbox */
+    border-radius: 50%; /* Hace que el checkbox sea redondo */
+    appearance: none; /* Elimina los estilos predeterminados del checkbox */
+    -webkit-appearance: none; /* Para navegadores basados en WebKit */
+    border: 2px solid #ff5341; /* Añade un borde alrededor del checkbox */
+    outline: none; /* Elimina el contorno predeterminado del enfoque */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el checkbox */
+}
+
+.wrong input[type="checkbox"]:checked {
+    background-color: #ff5341; /* Cambia el fondo cuando está seleccionado */
+}
+
+.wrong label {
+    width: 100%;
+    height: 100%;
+    padding: 0px 24px 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ff5341;
+}
+
+.label {
+    width: 100%;
+    height: 100%;
+    padding: 0px 24px 0px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #737373;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+.next {
+    width: 327px;
+    height: 52px;
+    border-radius: 16px;
+    border: none;
+    background-color: #3eb8d4;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 39px 0px 102px 0px;
+}
+
+.next:hover {
+    cursor: pointer;
+}

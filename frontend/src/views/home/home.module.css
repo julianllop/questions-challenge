@@ -1,0 +1,9 @@
+.homeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    padding: 47px 24px 29px 24px;
+    gap: 29px;
+}
